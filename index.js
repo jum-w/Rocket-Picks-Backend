@@ -52,10 +52,7 @@ app.post("/create", (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
 
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://api.rocketpicks.xyz/create"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "https://api.rocketpicks.xyz");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST");
   res.setHeader("Access-Control-Max-Age", 86400);
@@ -76,10 +73,7 @@ app.post("/create", (req, res) => {
 });
 
 app.get("/names", (req, res) => {
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://api.rocketpicks.xyz/names"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "https://api.rocketpicks.xyz");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST");
   res.setHeader("Access-Control-Max-Age", 86400);
@@ -97,10 +91,7 @@ app.get("/names", (req, res) => {
 app.post("/points", (req, res) => {
   const username = req.body.username;
 
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://api.rocketpicks.xyz/points"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "https://api.rocketpicks.xyz");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST");
   res.setHeader("Access-Control-Max-Age", 86400);
@@ -128,10 +119,7 @@ app.post("/results", (req, res) => {
   const s6 = req.body.score6;
   const s7 = req.body.score7;
 
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://api.rocketpicks.xyz/results"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "https://api.rocketpicks.xyz");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST");
   res.setHeader("Access-Control-Max-Age", 86400);
@@ -152,10 +140,7 @@ app.post("/results", (req, res) => {
 app.post("/check", (req, res) => {
   const username = req.body.username;
 
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://api.rocketpicks.xyz/check"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "https://api.rocketpicks.xyz");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST");
   res.setHeader("Access-Control-Max-Age", 86400);
@@ -174,10 +159,7 @@ app.post("/check", (req, res) => {
 });
 
 app.get("/teams", (req, res) => {
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://api.rocketpicks.xyz/teams"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "https://api.rocketpicks.xyz");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST");
   res.setHeader("Access-Control-Max-Age", 86400);
@@ -194,10 +176,7 @@ app.get("/teams", (req, res) => {
 app.post("/teams", (req, res) => {
   const username = req.body.username;
 
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://api.rocketpicks.xyz/teams"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "https://api.rocketpicks.xyz");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST");
   res.setHeader("Access-Control-Max-Age", 86400);
@@ -216,10 +195,7 @@ app.post("/teams", (req, res) => {
 });
 
 app.get("/login", (req, res) => {
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://api.rocketpicks.xyz/login"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "https://api.rocketpicks.xyz");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST");
   res.setHeader("Access-Control-Max-Age", 86400);
@@ -235,10 +211,7 @@ app.post("/login", (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
 
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://api.rocketpicks.xyz/login"
-  );
+  res.setHeader("Access-Control-Allow-Origin", "https://api.rocketpicks.xyz");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST");
   res.setHeader("Access-Control-Max-Age", 86400);
