@@ -9,26 +9,21 @@ const session = require("express-session");
 
 require("dotenv").config();
 
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://api.rocketpicks.xyz/");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST");
-  res.setHeader("Access-Control-Max-Age", 86400);
-  next();
-});
+const urls = ["http://localhost:3000", "https://www.rocketpicks.xyz"];
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "http://localhost:3000/login",
-      "http://localhost:3000/register",
-      "http://localhost:3000/leaderboard",
-    ],
-    methods: ["GET", "POST"],
-    credentials: true,
-  })
-);
+const corsOptions = {
+  origin: (urls, callback) => {
+    if (urls.indexOf(origin) !== -1 || origin === undefined) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST"],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
